@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>人物标记图</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+    .marker {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+      border: 2px solid white;
+      cursor: pointer;
+    }
+    .tooltip {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: white;
+      padding: 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+      display: none;
+      font-size: 14px;
+    }
+    .marker:hover + .tooltip {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h2>点击红点查看人物信息</h2>
+  <div class="image-container">
+    <img src="2025.05.30马斯克、特朗普.jpg" alt="人物合影" width="1000" />
+    <!-- 标记点1：马斯克 -->
+    <a href="page-ma.html" class="marker" style="top: 50px; left: 200px;"></a>
+    <div class="tooltip" style="top: 70px; left: 220px;">马斯克</div>
+    <!-- 标记点2：特朗普 -->
+    <a href="page-te.html" class="marker" style="top: 250px; left: 650px;"></a>
+    <div class="tooltip" style="top: 270px; left: 670px;">特朗普</div>
+<!-- 文字说明区域 -->    <div class="description-area">   <p>特朗普5月30日在白宫为马斯克举行送别记者会时说，马斯克不会真的离开，永远是他的“朋友和顾问”。（路透社）本合影拍摄于 <strong>2025年5月30日</strong> 白宫</p>
+  </div>
+</body>
+</html>
